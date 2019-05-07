@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Наталья Зотова](https://up.htmlacademy.ru/htmlcss/25/user/1079951).
-* Наставник: `Неизвестно`.
+- Студент: [Наталья Зотова](https://up.htmlacademy.ru/htmlcss/25/user/1079951).
+- Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
