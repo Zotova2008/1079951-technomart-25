@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,17 +14,15 @@
         <img src="img/logo-technomart.svg" alt="Техномарт" width="108" height="18">
       </a>
       <p class="search-box">
-        <label for="search">Поиск</label>
-        <input type="search" name="seatch" id="search">
+        <label for="search" class="visually-hidden">Поиск</label>
+        <input type="search" name="seatch" id="search" placeholder="Поиск:">
       </p>
       <a href="#" class="bookmarks-box">Закладки:0</a>
       <a href="#" class="basket-box">Корзина:0</a>
       <a href="#" class="button order">Оформить заказ</a>
     </section>
     <section class="contacts-login">
-      <h1>
-        Интернет-магазин строительных материалов и инструментов для ремонта
-      </h1>
+      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <p>
         <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -103,8 +101,8 @@
         <li class="popular-item">
           <img class="popular-img" src="img/bosch9000.jpg" width="218" height="170" alt="bosch">
           <div class="visually-hidden">
+            <a href="#" class="bottom-buy">Купить</a>
             <a href="#" class="bottom-bookmarks">В закладки</a>
-            <a href="#" class="bottom-buy">В закладки</a>
           </div>
           <a href="#" class="catalog-title">Перфоратор BOSCH BFG-9000</a>
           <span class="crossed-price">32500 P.</span>
@@ -113,8 +111,8 @@
         <li class="popular-item">
           <img class="popular-img" src="img/bosch3000.jpg" width="218" height="170" alt="bosch">
           <div class="visually-hidden">
+            <a href="#" class="bottom-buy">Купить</a>
             <a href="#" class="bottom-bookmarks">В закладки</a>
-            <a href="#" class="bottom-buy">В закладки</a>
           </div>
           <a href="#" class="catalog-title">Перфоратор BOSCH BFG-3000</a>
           <span class="crossed-price">22500 P.</span>
@@ -123,8 +121,8 @@
         <li class="popular-item">
           <img class="popular-img" src="img/bosch6000.jpg" width="218" height="170" alt="bosch">
           <div class="visually-hidden">
+            <a href="#" class="bottom-buy">Купить</a>
             <a href="#" class="bottom-bookmarks">В закладки</a>
-            <a href="#" class="bottom-buy">В закладки</a>
           </div>
           <a href="#" class="catalog-title">Перфоратор BOSCH BFG-6000</a>
           <span class="crossed-price">30500 P.</span>
@@ -133,8 +131,8 @@
         <li class="popular-item">
           <img class="popular-img item-new" src="img/bosch2000.jpg" width="218" height="170" alt="bosch">
           <div class="visually-hidden">
+            <a href="#" class="bottom-buy">Купить</a>
             <a href="#" class="bottom-bookmarks">В закладки</a>
-            <a href="#" class="bottom-buy">В закладки</a>
           </div>
           <a href="#" class="catalog-title">Перфоратор BOSCH BFG-2000</a>
           <span class="catalog-price">12500 P.</span>
@@ -222,7 +220,37 @@
       <a href="#" class="map">
         <img src="img/map.png" width="300" height="158" alt="">
       </a>
+
+      <div class="modal-box modal-map">
+        <span class="btn-close">Закрыть</span>
+        <div class="modal-item">
+          <img src="img/map-big.png" width="970" height="446" alt="">
+        </div>
+      </div>
+
       <a href="#" class="button">Заблудились? Напишите нам</a>
+
+      <div class="modal-box modal-form">
+        <button class="btn-close">Закрыть</button>
+        <form action="" method="get">
+          <div class="form-item">
+            <label for="input-name">Ваше имя:</label>
+            <input id="input-name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="form-item">
+            <label for="input-email">Ваш e-mail:</label>
+            <input id="input-email" type="email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="form-item">
+            <label for="input-message">Текст письма:</label>
+            <textarea id="input-message" name="message" placeholder="В свободной форме"></textarea>
+          </div>
+          <div class="modal-bottom">
+            <button type="submit" name="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+
     </section>
   </main>
   <footer class="main-footer">
