@@ -1,0 +1,518 @@
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "cuprum", "Arial", sans-serif;
+  src: url("fonts/cuprum.woff2") format("woff2"),
+    url("fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "cuprum", "Arial", sans-serif;
+  src: url("fonts/cuprumbold.woff2") format("woff2"),
+    url("fonts/cuprumbold.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: normal;
+  font-family: "cuprum", "Arial", sans-serif;
+  src: url("fonts/cuprumitalic.woff2") format("woff2"),
+    url("fonts/cuprumitalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: bold;
+  font-family: "cuprum", "Arial", sans-serif;
+  src: url("fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("fonts/cuprumbolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "ptsans", "Arial", sans-serif;
+  src: url("fonts/ptsans.woff2") format("woff2"),
+    url("fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "ptsans", "Arial", sans-serif;
+  src: url("fonts/ptsansbold.woff2") format("woff2"),
+    url("fonts/ptsansbold.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "cuprum", "Arial", sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  display: block;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+header {
+  background: #f3f7f9 url("../img/bg-top.png")
+}
+
+.logo-box {
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+}
+
+.logo-img {
+  display: flex;
+  width: 220px;
+  height: 47px;
+  padding-bottom: 5px;
+  background-color: #ee3643;
+  box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.24) inset;
+}
+
+.logo-img:hover {
+  background-color: #ca2c37;
+}
+
+.logo-img:focus,
+.logo-img:active {
+  background-color: #ba2732;
+}
+
+.logo-img img {
+  display: block;
+  width: 110px;
+  height: 20px;
+  margin: auto;
+}
+
+.search-box input {
+  color: #fff;
+  background-color: #293449;
+  border: none;
+}
+
+.search-box input:hover {
+  background: #212a3a;
+}
+
+.search-box input:focus,
+.search-box input:active {
+  color: #000;
+  background: #fff;
+}
+
+.logo-box .button {
+  background: #293449;
+  color: #fff;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "cuprum", "Arial", sans-serif;
+}
+
+.logo-box .button:hover {
+  background: #212a3a;
+}
+
+.logo-box .button:active,
+.logo-box .button:focus {
+  opacity: 0.5;
+}
+
+.logo-box .order {
+  background: #63a63e;
+}
+
+.logo-box .cart-full {
+  background: #ee3643;
+}
+
+h1,
+.title-header {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.contacts-login p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.login-box ul {
+  list-style: none;
+}
+
+.btn-login {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+}
+
+.btn-login.user:hover {
+  color: #000;
+}
+
+.btn-login:active,
+.btn-login:focus,
+.login-breadcrumbs a:active,
+.login-breadcrumbs a:focus {
+  opacity: 0.3;
+}
+
+.login-breadcrumbs a {
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.login-breadcrumbs a:hover {
+  color: #ee3643;
+}
+
+.main-menu {
+  background: #32425c;
+  color: #fff;
+}
+
+.main-menu ul {
+  list-style: none;
+}
+
+.main-menu a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.main-menu li:hover {
+  background: #293449;
+}
+
+.main-menu li:active,
+.main-menu li:focus {
+  opacity: 0.5;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.delivery p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.delivery ul {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.delivery-map .button {
+  background: #ee3643;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main-footer {
+  background: #293449;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.logo-footer {
+  background: #32425c;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.logo-footer .logo-img {
+  width: 220px;
+  height: 68px;
+}
+
+.logo-img img {
+  width: 138px;
+  height: 23px;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.logo-footer a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.logo-footer a:hover {
+  text-decoration: underline;
+}
+
+.logo-footer a:active,
+.logo-footer a:focus {
+  opacity: 0.5;
+}
+
+.menu-footer a {
+  color: #ffd180;
+}
+
+.copyright-item a {
+  color: #ffd180;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.copyright-item a:focus,
+.copyright-item a:active {
+  color: #ee3643;
+}
+
+/* .modal-box {
+  display: none;
+} */
+
+.modal-item img {
+  box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modal-form {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ff5357;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+}
+
+.form-item input,
+.form-item textarea {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.modal-bottom button,
+.modal-bottom a {
+  border: none;
+  background: #ee3643;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.title-catalog {
+  text-transform: uppercase;
+  color: #32425c;
+  background: #f2f6f8 url("../img/bg-top.png")
+}
+
+.filter-fabricator,
+.filter-power {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000;
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.catalog ul {
+  list-style: none;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.catalog-item img {
+  display: block;
+  width: 218px;
+  height: 170px;
+}
+
+.catalog-title {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.price {
+  color: #999;
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.crossed-price {
+  text-decoration: line-through;
+}
+
+.catalog-price {
+  background: #ee3643;
+  color: #fff;
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.button-hover a {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button-buy {
+  background: #63a63e;
+  color: #fff;
+  box-shadow: 0 -5px 0 #367315 inset;
+  display: flex;
+  width: 135px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-buy:hover {
+  background: #5fbb2d;
+  color: #fff;
+}
+
+.button-buy:focus,
+.button-buy:active {
+  background: #518534;
+  color: #fff;
+  box-shadow: none;
+}
+
+.button-bookmarks {
+  border: 3px solid #63a63e;
+  color: #000;
+}
+
+.button-bookmarks:hover {
+  border-color: #32425c;
+}
+
+.button-bookmarks:focus,
+.button-bookmarks:active {
+  opacity: 0.3;
+}
+
+h5 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-goods p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.modal-basket {
+  box-shadow: 0 20px 40px 0 rgba(29, 46, 80, 0.75);
+  border-top: 7px solid #ff5357;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-basket button {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+}
