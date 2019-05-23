@@ -705,10 +705,9 @@ h1,
   background: url("../img/map.png") no-repeat 100% 100%;
 }
 
-/* Верну при отправке для бонусного задания */
-/* .modal-box {
+.modal-box {
   display: none;
-} */
+}
 
 .modal-map {
   max-width: 940px;
