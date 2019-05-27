@@ -51,15 +51,14 @@ html {
 }
 
 body {
-  max-width: 1200px;
   margin: 0 auto;
   font-family: "cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 *,
@@ -124,7 +123,7 @@ header {
   margin-bottom: 45px;
   font-size: 17px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   background-color: #293449;
 }
 
@@ -162,7 +161,7 @@ header {
   min-height: 42px;
   margin-top: 1px;
   padding-left: 50px;
-  color: #000;
+  color: #000000;
   /* border: none; */
   background: #293449;
 
@@ -176,8 +175,8 @@ header {
 
 .search-box input:active,
 .search-box input:focus {
-  color: #000;
-  background: #fff;
+  color: #000000;
+  background: #ffffff;
 }
 
 .btn-logo {
@@ -191,7 +190,7 @@ header {
   font-size: 17px;
   line-height: 18px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   background: #293449;
 
   /* Временная рамка */
@@ -259,7 +258,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 270px;
-  height: 45px;
+  padding: 9px;
   padding-left: 45px;
   font-family: "cuprum", "Arial", sans-serif;
   font-style: normal;
@@ -289,8 +288,8 @@ header {
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
-  color: #000;
-  background: #fff;
+  color: #000000;
+  background: #ffffff;
 }
 
 .login-icon {
@@ -326,7 +325,7 @@ header {
 
 .btn-login.user:hover,
 .btn-login.user:focus {
-  color: #000;
+  color: #000000;
 }
 
 .login-breadcrumbs a:hover,
@@ -341,7 +340,7 @@ header {
 
 .main-menu {
   margin-bottom: 60px;
-  color: #fff;
+  color: #ffffff;
   background: #32425c;
   box-shadow: inset 0 -5px 0 #293449;
 }
@@ -359,7 +358,7 @@ header {
   font-weight: normal;
   font-size: 17px;
   line-height: 17px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .main-menu a:hover,
@@ -397,7 +396,7 @@ header {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .promo-materials {
@@ -431,14 +430,14 @@ header {
   justify-content: center;
   align-items: center;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
   padding-left: 3px;
   font-family: "cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -457,20 +456,20 @@ header {
   position: relative;
   display: block;
   width: 620px;
-  height: 266px;
+  min-height: 266px;
 }
 
 .slider-items {
   display: block;
   width: 620px;
-  height: 266px;
+  min-height: 266px;
   font-family: "cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   /* Временно черный */
-  color: #000;
+  color: #000000;
 
 }
 
@@ -490,7 +489,7 @@ header {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -500,7 +499,7 @@ header {
   left: 23px;
   z-index: 1;
   margin: 0;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Временно для стилизации */
@@ -513,13 +512,13 @@ header {
   justify-content: center;
   align-items: center;
   width: 195px;
-  height: 38px;
+  min-height: 38px;
   font-family: "cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   background: #ee3643;
   border-radius: 2px;
@@ -615,7 +614,7 @@ header {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  color: #000;
+  color: #000000;
 }
 
 .price {
@@ -642,7 +641,7 @@ header {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   background: #ee3643;
   border-radius: 2px;
@@ -673,7 +672,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
   font-family: "cuprum", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -685,19 +684,19 @@ header {
 
 .btn-buy {
   margin-bottom: 7px;
-  color: #fff;
+  color: #ffffff;
   background-color: #63a63e;
   box-shadow: inset 0 -3px 0 #367315;
 }
 
 .btn-buy:hover,
 .btn-buy:focus {
-  color: #fff;
+  color: #ffffff;
   background: #5fbb2d;
 }
 
 .btn-buy:active {
-  color: #fff;
+  color: #ffffff;
   background: #518534;
   box-shadow: none;
 }
@@ -755,7 +754,7 @@ header {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
   background: #f2f6f8 url("../img/bg-top.png");
 }
 
@@ -773,7 +772,7 @@ header {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -795,7 +794,7 @@ header {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
   background-color: #32425c;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
 }
@@ -807,14 +806,15 @@ header {
 }
 
 .tabs a:active {
-  background-color: #fff;
-  box-shadow: 0 1px 0 #fff, inset 0 1px 0 #fff;
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #ffffff,
+    inset 0 1px 0 #ffffff;
 }
 
 .tabs .active a {
   color: #32425c;
-  background: #fff;
-  box-shadow: 0 1px 0 #fff;
+  background: #ffffff;
+  box-shadow: 0 1px 0 #ffffff;
 }
 
 .tabs-content {
@@ -871,7 +871,7 @@ header {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 }
 
 .delivery {
@@ -886,7 +886,7 @@ header {
   font-weight: normal;
   font-size: 18px;
   line-height: 20px;
-  color: #000;
+  color: #000000;
 }
 
 .delivery li:last-child {
@@ -986,8 +986,8 @@ header {
   font-weight: normal;
   font-size: 18px;
   line-height: 18px;
-  color: #000;
-  background: #fff;
+  color: #000000;
+  background: #ffffff;
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
@@ -1014,7 +1014,7 @@ header {
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #dee3e4;
   border-radius: 2px;
 }
@@ -1039,9 +1039,9 @@ header {
   flex-direction: column;
   align-items: center;
   width: 620px;
-  height: 282px;
+  min-height: 282px;
   margin: auto;
-  background: #fff;
+  background: #ffffff;
 }
 
 .modal-basket p {
@@ -1080,7 +1080,7 @@ header {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
   background: #293449;
 }
 
@@ -1138,17 +1138,20 @@ header {
   margin-bottom: 75px;
 }
 
-.footer-container ul li {
+.menu-footer-other li,
+.menu-footer li {
   margin-right: 30px;
   margin-left: 30px;
 }
 
-.footer-container ul li:first-child {
+.menu-footer-other li:first-child,
+.menu-footer li:first-child {
   margin-right: 30px;
   margin-left: 0;
 }
 
-.footer-container ul li:last-child {
+.menu-footer-other li:last-child,
+.menu-footer li:last-child {
   margin-right: 0;
   margin-left: 30px;
 }
@@ -1267,7 +1270,7 @@ header {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -1359,7 +1362,7 @@ header {
   font-weight: normal;
   font-size: 17px;
   line-height: 18px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   background: #f7f3ec;
   border-radius: 2px;
@@ -1372,7 +1375,7 @@ header {
   font-weight: normal;
   font-size: 15px;
   line-height: 19px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -1394,9 +1397,9 @@ header {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #e5e5e5;
 }
 
@@ -1429,7 +1432,7 @@ header {
 
 .sorting-item:hover,
 .sorting-item:focus {
-  color: #000;
+  color: #000000;
   border-bottom: 1px solid #ee3643;
 }
 
@@ -1473,15 +1476,15 @@ header {
   justify-content: center;
   align-items: center;
   width: 38px;
-  height: 38px;
+  min-height: 38px;
   margin-right: 10px;
   font-family: "ptsans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
 }
@@ -1500,7 +1503,7 @@ header {
 }
 
 a.current-pagination {
-  color: #fff;
+  color: #ffffff;
   background: #ee3643;
 }
 
@@ -1511,7 +1514,7 @@ a.current-pagination {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
   background: #f2f6f8;
   border: 1px solid transparent;
 }
@@ -1522,12 +1525,12 @@ a.current-pagination {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  color: #000;
+  color: #000000;
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px 0 rgba(29, 46, 80, 0.75);
 }
 
 .btn-continue {
-  color: #000;
-  background: #fff;
+  color: #000000;
+  background: #ffffff;
 }
