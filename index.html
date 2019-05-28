@@ -18,6 +18,7 @@
         <p class="search-box">
           <label for="search" class="visually-hidden">Поиск:</label>
           <input type="search" name="search" id="search" placeholder="Поиск:">
+          <span class="search-loupe"></span>
         </p>
         <a href="#" class="btn-logo bookmarks">Закладки: 0</a>
         <a href="#" class="btn-logo cart">Корзина: 0</a>
@@ -76,26 +77,32 @@
       </div>
       <div class="promo-container">
         <div class="promo-slider">
-          <ul class="slider-items">
-            <li>
+          <input class="visually-hidden" type="radio" id="slide1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="slide2" name="toggle">
+          <div class="slider-list">
+            <div class="slider-item slide1">
               <img src="img/slider-perforator.jpg" alt="" width="620" height="266">
               <div class="title-slider">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
               </div>
               <a href="catalog.html" class="button button-catalog">Открыть каталог</a>
-            </li>
-            <li class="slider-hidden">
+            </div>
+            <div class="slider-item slide2">
               <img src="img/slider-drill.jpg" alt="" width="620" height="266">
               <div class="title-slider">
                 <h3>Дрели</h3>
-                <p>Соседям на рабость!</p>
+                <p>Соседям на радость!</p>
               </div>
-              <a href="catalog.html" class="button">Открыть каталог</a>
-            </li>
-          </ul>
-          <button type="button" class="btn-slider button-prev">Назад</button>
-          <button type="button" class="btn-slider button-next">Вперед</button>
+              <a href="catalog.html" class="button button-catalog">Открыть каталог</a>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <label for="slide1" aria-label="Первый"></label>
+            <label for="slide2" aria-label="Второй"></label>
+          </div>
+          <span class="btn-slider button-prev" aria-label="Назад"></span>
+          <span class="btn-slider button-next" aria-label="Вперед"></span>
         </div>
         <div class="promo-item-right">
           <div class="promo-item promo-sale">
@@ -112,7 +119,7 @@
 
     <section class="popular-goods wrapper">
       <div class="title">
-        <h2>Популярные товары</h2>
+        <h2>Популярные товары:</h2>
         <a href="#" class="button">Все популярные товары</a>
       </div>
       <ul class="catalor-container">
@@ -161,6 +168,7 @@
             </div>
           </div>
           <a href="#" class="catalog-title">Перфоратор BOSCH BFG-2000</a>
+          <span class="price price-crossed"></span>
           <span class="price-catalog">12500 P.</span>
         </li>
       </ul>
@@ -168,7 +176,7 @@
 
     <section class="popular-fabricator wrapper">
       <div class="title">
-        <h2>Популярные производители</h2>
+        <h2>Популярные производители:</h2>
         <a href="#" class="button">Все производители</a>
       </div>
       <ul>
@@ -220,7 +228,7 @@
               <h4>Доставка</h4>
               <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </div>
-            <div class="tabs-panel tabs-garant " data-index="1">
+            <div class="tabs-panel tabs-garant" data-index="1">
               <h4>Гарантия</h4>
               <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
             </div>
@@ -237,7 +245,7 @@
     <div class="delivery-map wrapper">
 
       <section class="delivery">
-        <h2>Компания "Техномарт"</h2>
+        <h2>Компания &laquo;Техномарт&raquo;</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! </p>
         <ul>Техномарт работает со многими транспортными компаниями:
@@ -258,11 +266,12 @@
           <div class="modal-map">
             <button type="button" class="btn-close" aria-label="Закрыть"></button>
             <div class="modal-item">
-              <img src="img/map-big.png" width="970" height="446" alt="Как добраться?">
+              <a href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474" target="_blank">
+                <img src="img/map-big.png" width="970" height="446" alt="Как добраться?">
+              </a>
             </div>
           </div>
         </div>
-
         <div class="modal-box">
           <div class="modal-form">
             <button type="button" class="btn-close" aria-label="Закрыть"></button>
@@ -287,6 +296,7 @@
             </form>
           </div>
         </div>
+
       </section>
     </div>
   </main>
@@ -323,7 +333,7 @@
       <div class="copyright-item">
         © 2010–2019 Компания «Техномарт» Все права защищены
       </div>
-      <div class="copyright-item">
+      <div class="copyright-item socia-box">
         <ul class="socia">
           <li class="icon-socia"><a href=" #" class="icon-vk" aria-label="ВКонтакте"></a></li>
           <li class="icon-socia"><a href=" #" class="icon-fb" aria-label="Facebook"></a></li>
@@ -332,7 +342,7 @@
       </div>
       <div class="copyright-item">
         <p>Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
-        <p>Разработано — <a href="#">htmlacademy.ru</a></p>
+        <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
       </div>
     </div>
   </footer>

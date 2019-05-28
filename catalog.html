@@ -18,6 +18,7 @@
         <p class="search-box">
           <label for="search" class="visually-hidden">Поиск:</label>
           <input type="search" name="search" id="search" placeholder="Поиск:">
+          <span class="search-loupe"></span>
         </p>
         <a href="#" class="btn-logo bookmarks">Закладки: 0</a>
         <a href="#" class="btn-logo cart cart-full">Корзина: 10</a>
@@ -44,7 +45,7 @@
       </div>
     </section>
     <div class="wrapper">
-      <nav class="main-menu wrapper">
+      <nav class="main-menu">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -62,7 +63,7 @@
     <section class="main-catalog wrapper">
 
       <ul class="breadcrumbs">
-        <li><a href="index.html" class="home-page">Главная</a></li>
+        <li><a href="index.html" class="home-page" aria-label="Главная"></a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a class="current-page">Перфораторы</a></li>
@@ -74,47 +75,56 @@
           <h3>Фильтр</h3>
           <div class="filter-price">
             <h4>Цена:</h4>
-            <p class="filter-range">
-              <input type="range" name="range" id="range">
-              <label for="range" class="visually-hidden">Диапазон цен</label>
-            </p>
-            <p class="range-discript">
-              <span class="price-range price-start">0</span>
-              <span>-</span>
-              <span class="price-range price-end">30000</span>
-            </p>
+            <div class="filter-range">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="price-range min-price" aria-label="от">
+                  <input name="min-price" type="text" value="0">
+                </label>
+                <span></span>
+                <label class="price-range max-price" aria-label="до">
+                  <input name="max-price" type="text" value="30000">
+                </label>
+              </div>
+            </div>
           </div>
           <div class="filter-fabricator">
             <h4>Производители:</h4>
             <p class="filter-fabricator-checkbox">
-              <input type="checkbox" name="fabricator" id="bosch" checked>
+              <input class="visually-hidden" type="checkbox" name="fabricator" id="bosch" checked>
               <label for="bosch">Bosch</label>
             </p>
             <p class="filter-fabricator-checkbox">
-              <input type="checkbox" name="fabricator" id="interskol">
+              <input class="visually-hidden" type="checkbox" name="fabricator" id="interskol">
               <label for="interskol">Интерскол</label>
             </p>
             <p class="filter-fabricator-checkbox">
-              <input type="checkbox" name="fabricator" id="makita" checked>
+              <input class="visually-hidden" type="checkbox" name="fabricator" id="makita" checked>
               <label for="makita">Makita</label>
             </p>
             <p class="filter-fabricator-checkbox">
-              <input type="checkbox" name="fabricator" id="dewalt">
+              <input class="visually-hidden" type="checkbox" name="fabricator" id="dewalt">
               <label for="dewalt">Dewalt</label>
             </p>
             <p class="filter-fabricator-checkbox">
-              <input type="checkbox" name="fabricator" id="hitachi">
+              <input class="visually-hidden" type="checkbox" name="fabricator" id="hitachi">
               <label for="hitachi">Hitachi</label>
             </p>
           </div>
           <div class="filter-power">
             <h4>Питание:</h4>
             <p class="filter-power-radio">
-              <input type="radio" name="power" id="battery" checked>
+              <input class="visually-hidden" type="radio" name="power" id="battery" checked>
               <label for="battery">Аккумуляторные</label>
             </p>
-            <p class="filter-fabricator-radio">
-              <input type="radio" name="power" id="network">
+            <p class="filter-power-radio">
+              <input class="visually-hidden" type="radio" name="power" id="network">
               <label for="network">Сетевые</label>
             </p>
           </div>
@@ -129,8 +139,8 @@
               <a href="#" class="sorting-item sorting-type">По типу</a>
               <a href="#" class="sorting-item sorting-function">По функционалу</a>
               <div class="sorting-up-down">
-                <a href="#" class="sorting-item sorting-up" aria-label="На увеличение"></a>
-                <a href="#" class="sorting-item sorting-down" aria-label="На уменьшение"></a>
+                <a href="#" class="sorting-up" aria-label="На увеличение"></a>
+                <a href="#" class="sorting-down" aria-label="На уменьшение"></a>
               </div>
             </div>
           </div>
@@ -168,7 +178,7 @@
                 </div>
               </div>
               <a href="#" class="catalog-title">Перфоратор BOSCH BFG-2000</a>
-              <!-- <span class="price-crossed">32500 P.</span> -->
+              <span class="price"></span>
               <span class="price-catalog">12500 P.</span>
             </li>
             <li class="catalog-item">
@@ -204,7 +214,7 @@
                 </div>
               </div>
               <a href="#" class="catalog-title">Перфоратор BOSCH BFG-2000</a>
-              <!-- <span class="price-crossed">32500 P.</span> -->
+              <span class="price"></span>
               <span class="price-catalog">12500 P.</span>
             </li>
             <li class="catalog-item item-new">
@@ -240,7 +250,7 @@
                 </div>
               </div>
               <a href="#" class="catalog-title">Перфоратор BOSCH BFG-2000</a>
-              <!-- <span class="price-crossed">32500 P.</span> -->
+              <span class="price"></span>
               <span class="price-catalog">12500 P.</span>
             </li>
           </ul>
@@ -296,7 +306,7 @@
       <div class="copyright-item">
         © 2010–2019 Компания «Техномарт» Все права защищены
       </div>
-      <div class="copyright-item">
+      <div class="copyright-item socia-box">
         <ul class="socia">
           <li class="icon-socia"><a href=" #" class="icon-vk" aria-label="ВКонтакте"></a></li>
           <li class="icon-socia"><a href=" #" class="icon-fb" aria-label="Facebook"></a></li>
@@ -305,7 +315,7 @@
       </div>
       <div class="copyright-item">
         <p>Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
-        <p>Разработано — <a href="#">htmlacademy.ru</a></p>
+        <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></p>
       </div>
     </div>
   </footer>
