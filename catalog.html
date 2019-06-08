@@ -5,22 +5,21 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-
+  <header class="header-box">
     <section class="logo-box">
       <div class="logo-container wrapper">
         <a class="logo-img" href="index.html" aria-label="Главная страница Интернет-магазина Техномарт">
           <img src="img/logo-technomart.svg" alt="Техномарт" width="110" height="20">
         </a>
-        <p class="search-box">
+        <form class="search-box" action="http://echo.htmlacademy.ru" method="post">
           <label for="search" class="visually-hidden">Поиск:</label>
           <input type="search" name="search" id="search" placeholder="Поиск:">
           <span class="search-loupe"></span>
-        </p>
+        </form>
         <a href="#" class="btn-logo bookmarks">Закладки: 0</a>
         <a href="#" class="btn-logo cart cart-full">Корзина: 10</a>
         <a href="#" class="btn-logo order">Оформить заказ</a>
@@ -36,7 +35,11 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
         <div class="login-box">
-          <a href="#" class="btn-login user">Равшан Джамшутович</a>
+          <div class="user-box">
+            <a href="#" class="profile" aria-label="Профиль"></a>
+            <a href="#" class="btn-login btn-user">Равшан Джамшутович</a>
+            <a href="#" class="user" aria-label="Выход"></a>
+          </div>
           <ul class="login-breadcrumbs">
             <li><a href="#">Мои заказы</a></li>
             <li><span></span></li>
@@ -73,68 +76,70 @@
       <h1 class="title-catalog">Перфораторы</h1>
       <div class="sorting-catalog">
         <section class="filter">
-          <h3>Фильтр</h3>
-          <div class="filter-price">
-            <h4>Цена:</h4>
-            <div class="filter-range">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+          <form action="http://echo.htmlacademy.ru" method="post">
+            <h3>Фильтр:</h3>
+            <div class="filter-price">
+              <h4>Цена:</h4>
+              <div class="filter-range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="price-range min-price" aria-label="от">
-                  <input name="min-price" type="text" value="0">
-                </label>
-                <span></span>
-                <label class="price-range max-price" aria-label="до">
-                  <input name="max-price" type="text" value="30000">
-                </label>
+                <div class="price-controls">
+                  <label class="price-range min-price" aria-label="от">
+                    <input name="min-price" type="text" value="0">
+                  </label>
+                  <span></span>
+                  <label class="price-range max-price" aria-label="до">
+                    <input name="max-price" type="text" value="30000">
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="filter-fabricator">
-            <h4>Производители:</h4>
-            <p class="filter-fabricator-checkbox">
-              <input class="visually-hidden" type="checkbox" name="fabricator" id="bosch" checked>
-              <label for="bosch">Bosch</label>
-            </p>
-            <p class="filter-fabricator-checkbox">
-              <input class="visually-hidden" type="checkbox" name="fabricator" id="interskol">
-              <label for="interskol">Интерскол</label>
-            </p>
-            <p class="filter-fabricator-checkbox">
-              <input class="visually-hidden" type="checkbox" name="fabricator" id="makita" checked>
-              <label for="makita">Makita</label>
-            </p>
-            <p class="filter-fabricator-checkbox">
-              <input class="visually-hidden" type="checkbox" name="fabricator" id="dewalt">
-              <label for="dewalt">Dewalt</label>
-            </p>
-            <p class="filter-fabricator-checkbox">
-              <input class="visually-hidden" type="checkbox" name="fabricator" id="hitachi">
-              <label for="hitachi">Hitachi</label>
-            </p>
-          </div>
-          <div class="filter-power">
-            <h4>Питание:</h4>
-            <p class="filter-power-radio">
-              <input class="visually-hidden" type="radio" name="power" id="battery" checked>
-              <label for="battery">Аккумуляторные</label>
-            </p>
-            <p class="filter-power-radio">
-              <input class="visually-hidden" type="radio" name="power" id="network">
-              <label for="network">Сетевые</label>
-            </p>
-          </div>
-          <button type="submit" class="filter-button">Показать</button>
+            <div class="filter-fabricator">
+              <h4>Производители:</h4>
+              <p class="filter-fabricator-checkbox">
+                <input class="visually-hidden" type="checkbox" name="fabricator" id="bosch" checked>
+                <label for="bosch">Bosch</label>
+              </p>
+              <p class="filter-fabricator-checkbox">
+                <input class="visually-hidden" type="checkbox" name="fabricator" id="interskol">
+                <label for="interskol">Интерскол</label>
+              </p>
+              <p class="filter-fabricator-checkbox">
+                <input class="visually-hidden" type="checkbox" name="fabricator" id="makita" checked>
+                <label for="makita">Makita</label>
+              </p>
+              <p class="filter-fabricator-checkbox">
+                <input class="visually-hidden" type="checkbox" name="fabricator" id="dewalt">
+                <label for="dewalt">Dewalt</label>
+              </p>
+              <p class="filter-fabricator-checkbox">
+                <input class="visually-hidden" type="checkbox" name="fabricator" id="hitachi">
+                <label for="hitachi">Hitachi</label>
+              </p>
+            </div>
+            <div class="filter-power">
+              <h4>Питание:</h4>
+              <p class="filter-power-radio">
+                <input class="visually-hidden" type="radio" name="power" id="battery" checked>
+                <label for="battery">Аккумуляторные</label>
+              </p>
+              <p class="filter-power-radio">
+                <input class="visually-hidden" type="radio" name="power" id="network">
+                <label for="network">Сетевые</label>
+              </p>
+            </div>
+            <button type="submit" class="filter-button">Показать</button>
+          </form>
         </section>
 
         <section class="catalog">
           <div class="sorting">
-            <h3>Сортировка</h3>
+            <h3>Сортировка:</h3>
             <div class="sorting-box">
               <a href="#" class="sorting-item sorting-activ sorting-price">По цене</a>
               <a href="#" class="sorting-item sorting-type">По типу</a>
