@@ -2201,6 +2201,7 @@ a.home-page {
 
 input:focus~label {
   text-decoration: underline;
+  -webkit-text-decoration-color: #0099FF;
   text-decoration-color: #0099FF;
 }
 
@@ -2234,6 +2235,7 @@ input:focus~label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 493px;
 }
