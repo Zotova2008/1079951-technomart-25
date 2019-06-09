@@ -79,3 +79,27 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+// Корзина
+var buylink = document.querySelectorAll(".btn-buy");
+var buypopup = document.querySelector(".modal-box-basket");
+var buyclose = buypopup.querySelector(".btn-close");
+
+buylink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buypopup.classList.add("modal-show");
+});
+
+buyclose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buypopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (buypopup.classList.contains("modal-show")) {
+      buypopup.classList.remove("modal-show");
+    }
+  }
+});

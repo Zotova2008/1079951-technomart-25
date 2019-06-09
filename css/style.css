@@ -1240,6 +1240,7 @@ input[type="search"]:focus~.search-loupe {
 }
 
 .delivery li {
+  position: relative;
   padding-top: 20px;
   padding-left: 35px;
   font-family: "cuprum", "Arial", sans-serif;
@@ -1248,6 +1249,16 @@ input[type="search"]:focus~.search-loupe {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+}
+
+.delivery li::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
 }
 
 .delivery ul {
@@ -1285,12 +1296,12 @@ input[type="search"]:focus~.search-loupe {
   height: 158px;
   margin-top: 32px;
   margin-bottom: 40px;
-  background: url("../img/map.png") no-repeat 100% 100%;
+  background: #f2f6f8 url("../img/map.png") no-repeat 100% 100%;
 }
 
 .formback-box,
 .modal-map-box,
-.modal-box {
+.modal-box-basket {
   position: fixed;
   top: 0;
   right: 0;
@@ -1526,6 +1537,10 @@ input[type="search"]:focus~.search-loupe {
   background-color: #ffffff;
   border: 2px solid #dee3e4;
   border-radius: 2px;
+}
+
+.form-item-message textarea {
+  resize: none;
 }
 
 .form-item-message {
@@ -1813,13 +1828,28 @@ input[type="search"]:focus~.search-loupe {
 /* Дополнительные стили для catalog.html */
 .user-box {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .btn-user {
+  min-height: 45px;
+  padding-right: 21px;
   padding-left: 48px;
 }
 
 .user {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  background-position: center;
+}
+
+.user::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -1833,7 +1863,7 @@ input[type="search"]:focus~.search-loupe {
   opacity: 0.3;
 }
 
-.profile {
+.btn-user::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -1847,13 +1877,17 @@ input[type="search"]:focus~.search-loupe {
   opacity: 0.3;
 }
 
-.user-box:hover .profile,
-.user-box:hover .user {
+.btn-user:hover::after,
+.user:hover::after {
   opacity: 1;
 }
 
-.user-box:active .user,
-.user-box:focus .user {
+.btn-user:active::after,
+.btn-user:focus::after,
+.user:active::after,
+.user:focus::after,
+.user:active,
+.user:focus {
   opacity: 0.3;
 }
 

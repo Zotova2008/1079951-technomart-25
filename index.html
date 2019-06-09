@@ -28,8 +28,7 @@
 
     <section class="contacts-login">
       <div class="contacts-container wrapper">
-        <!-- br поставила, потому что падингами не сделать как показано в макете -->
-        <h1 class="title-header">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+        <h1 class="title-header">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
         <p>
           <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -96,8 +95,8 @@
             </div>
           </div>
           <div class="slider-controls">
-            <label for="slide1" aria-label="Первый"></label>
-            <label for="slide2" aria-label="Второй"></label>
+            <label for="slide1" aria-label="Первый" tabindex="0"></label>
+            <label for="slide2" aria-label="Второй" tabindex="0"></label>
           </div>
           <button class="btn-slider button-prev" aria-label="Назад"></button>
           <button class="btn-slider button-next" aria-label="Вперед"></button>
@@ -257,8 +256,8 @@
       <section class="map-box">
         <h2>Контакты</h2>
         <p class="map-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#" class="btn-map" aria-label="Как добраться?"></a>
-        <a href="#" class="button formback">Заблудились? Напишите нам</a>
+        <a href="map.html" class="btn-map" aria-label="Как добраться?"></a>
+        <a href="feedback.html" class="button formback">Заблудились? Напишите нам</a>
 
         <div class="modal-map-box">
           <div class="modal-map">
@@ -343,8 +342,18 @@
     </div>
   </footer>
 
+  <div class="modal-box-basket">
+    <div class="modal-basket">
+      <button type="button" class="btn-close" aria-label="Закрыть"></button>
+      <p>Товар добавлен в корзину</p>
+      <div class="modal-bottom">
+        <a href="#" class="button btn-basket">Оформить заказ</a>
+        <button type="button" class="button btn-continue">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/script.min.js"></script>
 </body>
-<!-- Для бонусного задания -->
 
 </html>
