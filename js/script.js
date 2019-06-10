@@ -1,20 +1,22 @@
 // Форма обратной связи
 var link = document.querySelector(".formback");
-var popup = document.querySelector(".formback-box");
-var close = popup.querySelector(".btn-close");
-var form = popup.querySelector("form");
-var login = popup.querySelector("#input-name");
-var email = popup.querySelector("#input-email");
 
-var isStorageSupport = true;
-var storage = "";
-
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-}
 if (link) {
+  var popup = document.querySelector(".formback-box");
+  var close = popup.querySelector(".btn-close");
+  var form = popup.querySelector("form");
+  var login = popup.querySelector("#input-name");
+  var email = popup.querySelector("#input-email");
+
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
   link.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
@@ -59,10 +61,11 @@ if (link) {
 
 // Карта
 var maplink = document.querySelector(".btn-map");
-var mappopup = document.querySelector(".modal-map-box");
-var mapclose = mappopup.querySelector(".btn-close");
 
 if (maplink) {
+  var mappopup = document.querySelector(".modal-map-box");
+  var mapclose = mappopup.querySelector(".btn-close");
+
   maplink.addEventListener("click", function(evt) {
     evt.preventDefault();
     mappopup.classList.add("modal-show");
